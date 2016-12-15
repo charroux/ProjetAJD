@@ -18,7 +18,6 @@ Démarrer l'outil d'inspection de la base (en mode serveur à la connexion) :
 
 dans dossier lib d'hsqldb : java -cp hsqldb.jar org.hsqldb.util.DatabaseManager
 
-
 Lancer le projet : le main est dans org.descartes.ProjetAjdApplication (run as java application)
 
-
+Utiliser un plugin style RestClient pour Firefox afin de tester l'application
