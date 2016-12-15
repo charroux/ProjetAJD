@@ -7,6 +7,7 @@ import org.descartes.services.ServicePersonne;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -33,7 +34,10 @@ public class RestWebService {
 		return servicePersonne.findPersonne(nom);
 	}
 	
-	public void postPersonne(Personne personne){
+	@RequestMapping(value = "/personne", method = RequestMethod.POST)
+	@ResponseStatus(HttpStatus.OK)
+	public void postPersonne(@RequestBody Personne personne){
+		System.out.println(personne);
 		servicePersonne.addPersonne(personne);
 	}
 }
