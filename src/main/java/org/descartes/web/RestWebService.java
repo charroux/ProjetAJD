@@ -2,8 +2,6 @@ package org.descartes.web;
 
 import java.util.List;
 
-import location.Car;
-
 import org.descartes.domain.Personne;
 import org.descartes.services.ServicePersonne;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

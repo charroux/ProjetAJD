@@ -11,6 +11,10 @@ public class Personne {
 	String nom;
 	long id;
 	
+	public Personne() {
+		super();
+	}
+
 	public Personne(String nom) {
 		this.nom = nom;
 	}
